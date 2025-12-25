@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Sign In - BernardCornelis-Dev</title>
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image.png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <main class="form-wrapper">
+        <form class="login-form" autocomplete="on">
+            <h1>Login</h1>
+
+            <!-- Email-->
+             <div class="form-group">
+                <input type="email" placeholder="Email" autocomplete="email" required>
+                <i class="fa fa-envelope"></i>
+             </div>
+
+             <!-- Password -->
+              <div class="form-group">
+                <input type="password" id="password" placeholder="Password" autocomplete="current-password" required>
+                <i id="togglePassword" class="fa-solid fa-eye"></i>
+              </div>
+
+              <!-- Textarea -->
+               <div class="form-group">
+                <textarea placeholder="Comentario (opcional)"></textarea>
+               </div>
+
+               <!-- Boton -->
+               <button type="submit">Login</button>
+
+               <a href="#" class="forgot">Forgot password?</a>
+
+               <p>Don't have an account? <a href="#">Sign up</a></p>
+        </form>
+    </main>
+
+    <!-- JS -->
+     <script src="js/script.js"></script>
+</body>
+</html>
